@@ -89,3 +89,5 @@ copyObj.name = "Khokhar";
 
 console.log(copyObj);
 console.log(obj);
+
+// Spread Operators are very usefull when we want to copy reference values
