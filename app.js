@@ -66,7 +66,7 @@ myFun();
 
 // ________ How to copy reference values ________ //
 
-let myArr = [1,2,3,4,5,6];
+let myArr = [1, 2, 3, 4, 5, 6];
 let copyArr = [...myArr];
 
 copyArr.pop();
@@ -77,13 +77,12 @@ console.log(myArr);
 
 // We can also do this with objects
 
-
 let obj = {
   name: "Umer",
-  age : 19
-}
+  age: 19,
+};
 
-let copyObj = {...obj};
+let copyObj = { ...obj };
 
 copyObj.name = "Khokhar";
 
@@ -91,3 +90,20 @@ console.log(copyObj);
 console.log(obj);
 
 // Spread Operators are very usefull when we want to copy reference values
+
+// _______Truthy and false values _______ //
+
+if (0) {
+  console.log("Hello World");
+} else {
+  console.log("How are you?");
+}
+if (7) {
+  console.log("Hello World");
+} else {
+  console.log("How are you?");
+}
+
+// All the values except => 0, false, undefined, null NaN and document.all are truthy as you can seen in the example
+//Example 1: 0 (zero) is present and consider to be falsey and turn or behave like false value and "How are you" is printed
+//Example 2: 7 is present, and because 7 is not in falsey values so trun truthy and "Hello World" is printed
