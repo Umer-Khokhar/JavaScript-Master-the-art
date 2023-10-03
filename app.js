@@ -107,3 +107,55 @@ if (7) {
 // All the values except => 0, false, undefined, null NaN and document.all are truthy as you can seen in the example
 //Example 1: 0 (zero) is present and consider to be falsey and turn or behave like false value and "How are you" is printed
 //Example 2: 7 is present, and because 7 is not in falsey values so trun truthy and "Hello World" is printed
+
+// _______ forEach loop _______ //
+
+let arr = [1,3,5,7,8,9]
+
+arr.forEach(function(val) {
+  console.log(val + 4)
+})
+
+//forEach loop does not change the original array it makes the temperory copy of the array and make changes to it , original array i.e. arr will remains same!
+
+// ________ forIn loop ________ //
+
+// It is used on the objects as forEach use on arrays
+
+let myObj = {
+  boy : "Umer Khokhar",
+  boyAge : 19,
+  hobbies : ["Gardening", "Cricket", "Exercise", "Coding"]
+}
+
+for (let key in myObj) {
+  console.log(`${key} : ${myObj[key]}`)
+}
+
+// as you can see that key prints out property names only 
+// and myObj[key] prints out object property values it work like i.e. myObj[key] = myObj[boy], then myObj[boyAge] and so on to the end
+
+// ______ Do While loop ______ //
+
+let x = 10;
+
+do {
+  console.log("Hello World!");
+  x++;
+} while(x < 12)
+//Do while loop is similar to the while loop, the only difference is that do while loop runs aleast one time even the condition is false i.e. 
+
+let y = 7;
+do {
+  console.log("This print out one time")
+  y++;
+} while(y < 5)
+// _______ Definition of Callback function _______ //
+
+setTimeout(function() {
+  console.log("Data Recieve")
+}, 3000)
+
+// The function which runs when the data recieve (probably we don't know when it rec ieve) from the sever, api or database or any third parties is known as callback function
+
+//OR the code that runs later we give it a function and tell that function when code runs function is called!
