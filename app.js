@@ -104,7 +104,7 @@ if (7) {
   console.log("How are you?");
 }
 
-// All the values except => 0, false, undefined, null NaN and document.all are truthy as you can seen in the example
+// All the values except => 0, false, undefined, null NaN and document.all are falsey as you can seen in the example
 //Example 1: 0 (zero) is present and consider to be falsey and turn or behave like false value and "How are you" is printed
 //Example 2: 7 is present, and because 7 is not in falsey values so trun truthy and "Hello World" is printed
 
@@ -156,6 +156,6 @@ setTimeout(function() {
   console.log("Data Recieve")
 }, 3000)
 
-// The function which runs when the data recieve (probably we don't know when it rec ieve) from the sever, api or database or any third parties is known as callback function
+// The function which runs when the data recieve (probably we don't know when it recieve) from the server, api or database or any third parties is known as callback function
 
 //OR the code that runs later we give it a function and tell that function when code runs function is called!
